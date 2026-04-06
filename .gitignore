@@ -3,15 +3,20 @@
 
 # VS Code
 .vscode/
+.history/
 
 # Node.js
 node_modules/
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.tmp
 
 # Playwright
 playwright-report/
 test-results/
 blob-report/
+.playwright/
 
 # Environment files
 .env
@@ -19,3 +24,6 @@ blob-report/
 
 # Coverage
 coverage/
+
+# Logs
+*.log
