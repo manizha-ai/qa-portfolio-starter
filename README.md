@@ -1,6 +1,6 @@
 # QA Portfolio
 
-This repository showcases sample QA documentation and testing artifacts that reflect my experience as a Senior Quality Engineer working with SaaS products, web applications, and mobile testing.
+This repository showcases sample QA documentation and testing artifacts that reflect my experience as a Senior Quality Engineer working with SaaS products and web applications.
 
 ## Included In This Repository
 
@@ -13,7 +13,6 @@ This repository showcases sample QA documentation and testing artifacts that ref
 
 - SaaS application testing
 - Web application testing
-- Mobile testing
 - Manual testing
 - API testing
 - Regression and functional testing
