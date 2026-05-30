@@ -370,6 +370,35 @@ a:hover {
   padding: 26px;
 }
 
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.tool-card {
+  min-height: 156px;
+  padding: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.tool-card h3 {
+  margin: 0 0 14px;
+  color: var(--cream);
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.tool-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 .card p:not(.card-kicker),
 .ai-section p,
 .article p {
@@ -475,6 +504,7 @@ a:hover {
   .split,
   .ai-section,
   .columns,
+  .tool-grid,
   .card-grid,
   .artifact-grid,
   .sample-list {
