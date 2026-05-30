@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SaaS Profile Management QA | Manizha Salomova</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="article">
+      <a class="back-link" href="../index.html">Back to portfolio</a>
+      <header class="article-header">
+        <p class="eyebrow">Case Study</p>
+        <h1>SaaS Profile Management QA Sample</h1>
+        <p>
+          Manual QA documentation sample covering test planning, test cases, bug reports, validation behavior,
+          failed saves, cancel behavior, and persistence after refresh.
+        </p>
+      </header>
+
+      <h2>Feature Under Test</h2>
+      <p>
+        User Profile Management for a SaaS web application. The feature allows a user to view and update profile
+        information such as first name, last name, phone number, and job title.
+      </p>
+
+      <h2>Testing Objective</h2>
+      <p>
+        Verify that users can update profile information successfully and that the system handles validation,
+        cancel behavior, failed save scenarios, and saved data persistence correctly.
+      </p>
+
+      <h2>Scope</h2>
+      <ul>
+        <li>Profile page access</li>
+        <li>Profile information updates</li>
+        <li>Required field validation</li>
+        <li>Phone number validation</li>
+        <li>Save and cancel behavior</li>
+        <li>Failed save error messaging</li>
+        <li>Persistence after refresh</li>
+      </ul>
+
+      <h2>Sample Test Coverage</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Test Area</th>
+            <th>Example Scenario</th>
+            <th>Expected Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Page access</td>
+            <td>User opens the profile page</td>
+            <td>Current profile information displays</td>
+          </tr>
+          <tr>
+            <td>Valid update</td>
+            <td>User edits first and last name, then saves</td>
+            <td>Confirmation message appears and changes persist</td>
+          </tr>
+          <tr>
+            <td>Required field</td>
+            <td>User clears first name and saves</td>
+            <td>Validation message appears and form is not saved</td>
+          </tr>
+          <tr>
+            <td>Cancel behavior</td>
+            <td>User edits fields, then clicks Cancel</td>
+            <td>Unsaved changes are discarded</td>
+          </tr>
+          <tr>
+            <td>Backend failure</td>
+            <td>Save request fails</td>
+            <td>Clear error message appears and data is not incorrectly saved</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Defects Documented</h2>
+      <ul>
+        <li>Save button remains enabled after a successful update</li>
+        <li>Invalid phone number is accepted without validation</li>
+        <li>Cancel button saves edited values unintentionally</li>
+      </ul>
+
+      <h2>AI-Assisted QA Workflow</h2>
+      <p>
+        For a workflow like this, I may use AI to draft a first test matrix, check whether common negative cases
+        are missing, rewrite test cases for clarity, and summarize open risks. I still decide what to test, validate
+        the behavior, investigate defects, and determine release risk.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billing Platform Migration QA | Manizha Salomova</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="article">
+      <a class="back-link" href="../index.html">Back to portfolio</a>
+      <header class="article-header">
+        <p class="eyebrow">Case Study</p>
+        <h1>Billing Platform Migration QA</h1>
+        <p>
+          QA leadership for a complex billing platform migration involving subscription lifecycle behavior,
+          billing logic, invoicing outcomes, and cross-system data consistency.
+        </p>
+      </header>
+
+      <h2>Overview</h2>
+      <p>
+        This case study is based on my work as a Senior Quality Engineer supporting a billing platform migration
+        from Chargify to NetSuite/ZoneBilling. Billing workflows are high-risk because defects can affect customers,
+        revenue, reporting, and internal operations.
+      </p>
+
+      <h2>My Role</h2>
+      <ul>
+        <li>Led QA planning and validation for billing-related workflows</li>
+        <li>Partnered with Product Managers, Engineers, stakeholders, and Engineering Leadership</li>
+        <li>Reviewed requirements and clarified expected behavior before testing began</li>
+        <li>Identified edge cases around subscriptions, renewals, proration, invoicing, and failed scenarios</li>
+        <li>Documented defects with clear steps, expected results, actual results, severity, and impact</li>
+        <li>Communicated release risks and helped guide decisions around readiness</li>
+      </ul>
+
+      <h2>Testing Goals</h2>
+      <ul>
+        <li>Subscription lifecycle events behaved correctly across systems</li>
+        <li>Billing and invoicing outcomes matched expected business rules</li>
+        <li>Renewal, cancellation, and proration scenarios were handled correctly</li>
+        <li>Customer and subscription data stayed consistent after migration</li>
+        <li>Error states were visible, understandable, and recoverable</li>
+      </ul>
+
+      <h2>Sample Test Scenarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Scenario</th>
+            <th>What I Validated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Subscription creation</td>
+            <td>New customer starts a paid subscription</td>
+            <td>Subscription status, billing dates, invoice creation, and system sync</td>
+          </tr>
+          <tr>
+            <td>Renewal</td>
+            <td>Existing subscription renews</td>
+            <td>Renewal timing, invoice amount, and correct lifecycle state</td>
+          </tr>
+          <tr>
+            <td>Upgrade</td>
+            <td>Customer changes to a higher plan mid-cycle</td>
+            <td>Proration, invoice adjustment, and updated plan details</td>
+          </tr>
+          <tr>
+            <td>Cancellation</td>
+            <td>Customer cancels before next billing cycle</td>
+            <td>Access state, billing stop date, and cancellation records</td>
+          </tr>
+          <tr>
+            <td>Failed invoice</td>
+            <td>Invoice generation or payment fails</td>
+            <td>Error handling, retry behavior, and data accuracy</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>AI-Assisted QA Workflow</h2>
+      <p>
+        I used AI as a speed tool, not as a decision maker. AI can help organize scenario matrices, brainstorm
+        edge cases after requirements review, and turn investigation notes into clearer documentation. The actual
+        QA work still comes from product understanding, manual validation, stakeholder questions, and release judgment.
+      </p>
+
+      <h2>Outcome</h2>
+      <p>
+        This work strengthened release confidence by improving coverage, surfacing edge cases early, and giving
+        Product and Engineering clearer visibility into risk.
+      </p>
+    </main>
+  </body>
+</html>
