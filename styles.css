@@ -445,6 +445,28 @@ a:hover {
   margin-bottom: 28px;
 }
 
+.sample-page .article-header p {
+  max-width: 760px;
+}
+
+.artifact-grid {
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.artifact-grid a {
+  min-height: 76px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  background: rgba(244, 239, 229, 0.035);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--cream);
+}
+
 @media (max-width: 860px) {
   .nav,
   .hero,
@@ -454,6 +476,7 @@ a:hover {
   .ai-section,
   .columns,
   .card-grid,
+  .artifact-grid,
   .sample-list {
     grid-template-columns: 1fr;
   }

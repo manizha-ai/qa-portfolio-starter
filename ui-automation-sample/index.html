@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI Automation Sample | Manizha Salomova</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="article sample-page">
+      <a class="back-link" href="../index.html#samples">Back to portfolio</a>
+      <header class="article-header">
+        <p class="eyebrow">Portfolio Sample</p>
+        <h1>UI Automation Sample</h1>
+        <p>
+          A Playwright and TypeScript UI automation sample for common web application flows,
+          designed to support manual QA coverage with repeatable checks.
+        </p>
+      </header>
+
+      <h2>What This Sample Shows</h2>
+      <ul>
+        <li>Successful login validation</li>
+        <li>Locked-out user error validation</li>
+        <li>Inventory list visibility after login</li>
+        <li>Add-to-cart behavior and cart badge validation</li>
+      </ul>
+
+      <h2>Artifact Links</h2>
+      <div class="artifact-grid">
+        <a href="README.md">Project README</a>
+        <a href="tests/login.spec.ts">Login Tests</a>
+        <a href="tests/inventory.spec.ts">Inventory Tests</a>
+        <a href="playwright.config.ts">Playwright Config</a>
+      </div>
+
+      <h2>Highlighted Coverage</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Validation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard login</td>
+            <td>User reaches the inventory page and sees the Products heading.</td>
+          </tr>
+          <tr>
+            <td>Locked-out login</td>
+            <td>User sees the expected locked-out account error message.</td>
+          </tr>
+          <tr>
+            <td>Inventory page</td>
+            <td>Inventory list is visible and contains the expected number of items.</td>
+          </tr>
+          <tr>
+            <td>Add to cart</td>
+            <td>Cart badge updates after adding a product.</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Testing Sample | Manizha Salomova</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <main class="article sample-page">
+      <a class="back-link" href="../index.html#samples">Back to portfolio</a>
+      <header class="article-header">
+        <p class="eyebrow">Portfolio Sample</p>
+        <h1>API Testing Sample</h1>
+        <p>
+          A Playwright and TypeScript API testing sample that validates request behavior, response status,
+          response body data, and negative response handling.
+        </p>
+      </header>
+
+      <h2>What This Sample Shows</h2>
+      <ul>
+        <li>Readable API checks using Playwright test</li>
+        <li>GET request validation for query parameters</li>
+        <li>POST request validation for submitted JSON body data</li>
+        <li>404 response validation for a missing endpoint</li>
+      </ul>
+
+      <h2>Artifact Links</h2>
+      <div class="artifact-grid">
+        <a href="README.md">Project README</a>
+        <a href="tests/users.spec.ts">API Test File</a>
+        <a href="playwright.config.ts">Playwright Config</a>
+        <a href="screenshots/api-test-report.png">Test Report Screenshot</a>
+      </div>
+
+      <h2>Highlighted Coverage</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Validation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>GET request</td>
+            <td>Confirms query parameters and URL behavior are returned as expected.</td>
+          </tr>
+          <tr>
+            <td>POST request</td>
+            <td>Confirms submitted name and role data appear in the response body.</td>
+          </tr>
+          <tr>
+            <td>Missing endpoint</td>
+            <td>Confirms the API returns a 404 response for a known missing route.</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
