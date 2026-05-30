@@ -154,6 +154,16 @@ a:hover {
   padding: 28px;
 }
 
+.profile-photo {
+  width: 132px;
+  height: 132px;
+  margin-bottom: 22px;
+  display: block;
+  border: 4px solid var(--soft);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .hero-panel h2,
 .card h3 {
   margin: 0;
